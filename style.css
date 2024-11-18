@@ -1,0 +1,279 @@
+
+@font-face {
+    font-family: "font-spotfy";
+    src: url(./Spotfy/Fonte/gotham.zip);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "font-spotfy";
+    list-style: none;
+    text-decoration: none;
+}
+html{
+    font-size: 62.5%;
+    
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+#conteudo{
+        display: flex;       
+}
+
+main{
+    width: 100%;
+    background-image: linear-gradient(to bottom, #5F3149,#160B11 70%);
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+
+#barra-lateral{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 20rem;
+    background-image: linear-gradient(to bottom, #301925 ,#160B11 70% );
+    color: #938A8F;
+    padding: 2rem;
+} 
+.logospotfy{
+    height: 4rem;
+    padding-bottom: 1rem;
+}
+header > #barra-lateral > div ul li a{
+    color:#938A8F;
+}
+.lista1 li{
+    padding: .4rem;
+}
+.lis{
+        font-size: 1.4rem;
+}
+header > #barra-lateral > div >ul> #nome-verde a {
+    color: #65ca65;
+}
+.search{
+    height: 2.5rem;
+}
+/*=========================Parte de baixo===========================*/
+#header-bottom{
+    margin-bottom: 10rem;
+}
+.position{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lista2 li{
+    padding: .4rem;
+}
+header > #barra-lateral >  #header-bottom > ul li {
+    color:#938A8F;
+}
+.down{
+    height: 2.5rem;   
+}
+.perfil{
+    height: 3rem;
+    border-radius: 100%;
+}
+header > #barra-lateral >  #header-bottom > ul > .position >#nome{
+    color: white;
+    margin-right: 4.9rem;
+}
+/*=======================================480px===================================================*/
+@media (max-width: 480px){
+    #barra-lateral{
+        width: 10rem;
+        padding: 0;
+        height:100%;
+    }
+  
+}
+
+.central{
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+    gap: 2rem;
+}
+.central a{
+    color: white;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 3rem;
+}
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 2rem;
+    margin: 1rem;
+}
+.centro{
+    display: flex;
+    justify-content: center;
+}
+.texto-img{
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding-top: 1.5rem;
+
+}
+.imgs-albuns{
+    height: 18rem;
+    width: 18rem;
+}
+article > a{
+    color: #65ca65;
+    padding: 4rem;
+}
+main > #albuns-preferidos{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-left: 5rem;
+}
+/*=======================================480px===================================================*/
+@media (max-width: 480px){
+    .imgs-albuns{
+        height: 9rem;
+        width: 9rem;
+    }
+    .central{
+        padding: 1.5rem;
+    }
+    .galeria{
+        margin: 0rem;
+        padding: .5rem;
+    }
+    h1{
+        padding-bottom: 2rem;
+    }
+    article > a{
+        padding: 2rem;
+    }
+    main > #albuns-preferidos{
+        padding-left: 0;
+    }
+}
+/* =======================================375px=================================================== */
+@media (max-width: 375px){
+    .imgs-albuns{
+        height: 7rem;
+        width: 7rem;
+    }
+  
+}
+
+#rodape{
+    display: flex;
+    justify-content: flex-end;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* width: 100vw; */
+    height: 10rem; 
+    background-color: #282828;
+    
+}
+#music{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 37rem;
+}
+.musicas img{
+   margin-right: 1.5rem;
+   margin-bottom: 1.5rem;
+}
+.img-rodape{
+    height: 3.5rem;
+    width: 3.5rem;
+}
+.img-play{
+    height: 4rem;
+    width: 4rem;
+}
+.tempo{
+    color:  #938A8F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
+}
+.hr{
+    width: 50rem;
+    color: #938A8F;
+}
+.opcoes{
+    display: flex;
+    justify-content: flex-end;
+    align-items:center ;
+    padding-right: 2rem;
+    gap: 2rem;
+}
+.distancia{
+    margin-left: 2rem;
+}
+.hr2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 9rem;
+}
+/*=======================================480px===================================================*/
+@media (max-width: 480px){
+    #rodape{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .img-rodape{
+        height: 2rem;
+        width: 2rem;
+    }
+    .img-play{
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    #music{
+        margin-right: 0rem;
+    }
+    .hr{
+        width: 15rem;
+        color: #938A8F;
+    }
+    .hr2{
+        width: 5rem;
+    }
+    .opcoes{
+        padding: .5rem;
+        gap: .5rem;
+    }
+    .distancia{
+        margin-left: .5rem;
+    }
+    .musicas{
+        padding-left: 2rem;
+    }
+
+}
+/* =======================================375px=================================================== */
+@media (max-width: 375px ){
+    #rodape{
+        width: 106%;
+    }
+  
+}
